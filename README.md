@@ -85,7 +85,7 @@ Desenvolver uma solução tecnológica conectada à economia espacial, utilizand
 
 O dataset utilizado foi o **EuroSAT**:
 
-![Descrição Alternativa da Imagem](docs\prints\dataset.PNG)
+![alt text4](docs\prints\dataset.PNG)
 
  Esse dataset é composto por imagens orbitais de uso e cobertura do solo. As imagens são divididas em 10 classes:
 
@@ -108,7 +108,7 @@ O modelo foi treinado para receber uma imagem orbital e prever automaticamente a
 
 Foi utilizado **Transfer Learning** com a arquitetura **MobileNetV2**, uma rede neural convolucional pré-treinada.
 
-![Descrição Alternativa da Imagem](docs\prints\train.PNG)
+![alt text3](docs\prints\train.PNG)
 
 ### Configurações principais
 
@@ -129,7 +129,7 @@ Em um teste simples com uma imagem de cada classe, o modelo acertou 9 de 10 cate
 
 ## 🌐 Dashboard
 
-![Descrição Alternativa da Imagem](docs\prints\home.PNG)
+![alt text2](docs\prints\home.PNG)
 
 O dashboard foi desenvolvido com **Streamlit** e permite:
 
@@ -148,7 +148,7 @@ O dashboard foi desenvolvido com **Streamlit** e permite:
 
 ## 🔥 Módulo IoT - Wokwi
 
-![Descrição Alternativa da Imagem](docs/prints/queimada.PNG)
+![alt text1](docs/prints/queimada.PNG)
 
 O módulo IoT foi criado no **Wokwi** usando ESP32.
 
@@ -173,7 +173,7 @@ A lógica de risco de queimada considera:
 
 Quando uma dessas condições ocorre, o LED vermelho é acionado, representando um alerta visual de risco ambiental.
 
-![Descrição Alternativa da Imagem](docs/prints/wokwi2.PNG)
+![Descrição Alternativa da Imagem2](docs/prints/wokwi2.PNG)
 
 Esse módulo representa sensores terrestres que poderiam ser instalados em áreas monitoradas. Em um sistema real, esses dados poderiam ser enviados para o dashboard por API, MQTT ou AWS IoT Core.
 
@@ -181,7 +181,7 @@ Esse módulo representa sensores terrestres que poderiam ser instalados em área
 
 ## ☁️ Arquitetura proposta em nuvem
 
-![alt text](docs\prints\arquitetura_aws.PNG)
+![alt text5](docs\prints\arquitetura_aws.PNG)
 
 Nesta POC, a solução roda localmente. Porém, para uma versão real, a arquitetura poderia utilizar serviços em nuvem:
 
