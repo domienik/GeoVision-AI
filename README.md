@@ -146,6 +146,31 @@ O dashboard foi desenvolvido com **Streamlit** e permite:
 
 ---
 
+## 🗄️ Banco de Dados - SQLite
+
+![alt text2](docs/prints/historico.PNG)
+
+O projeto utiliza **SQLite** para registrar o histórico das classificações realizadas no dashboard.
+
+Sempre que o usuário envia uma imagem orbital para análise, o sistema executa o modelo de Inteligência Artificial e salva no banco de dados as principais informações da previsão:
+
+* Nome do arquivo enviado
+* Classe prevista pelo modelo
+* Confiança da previsão
+* Data e horário da classificação
+
+Esses dados são armazenados localmente no arquivo:
+
+```text
+src/outputs/classificacoes.db
+```
+
+A escolha do SQLite foi feita por ser uma solução simples, leve e adequada para uma Prova de Conceito. Como o projeto roda localmente, não foi necessário utilizar um servidor de banco de dados externo.
+
+No dashboard, o histórico salvo no SQLite é exibido em formato de tabela, permitindo acompanhar as classificações já realizadas. Em uma versão futura, esse banco poderia ser substituído por serviços em nuvem como **Amazon RDS** ou **DynamoDB**, permitindo maior escalabilidade e integração com APIs.
+
+---
+
 ## 🔥 Módulo IoT - Wokwi
 
 ![alt text1](docs/prints/queimada.PNG)
